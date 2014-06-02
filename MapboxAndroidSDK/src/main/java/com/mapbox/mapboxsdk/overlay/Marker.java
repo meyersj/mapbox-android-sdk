@@ -137,6 +137,10 @@ public class Marker {
         return mUid;
     }
 
+    public void setUid(String aUid) {
+        mUid = aUid;
+    }
+
     public String getTitle() {
         return mTitle;
     }

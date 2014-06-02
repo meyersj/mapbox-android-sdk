@@ -20,6 +20,7 @@ public class ItemizedIconOverlay extends ItemizedOverlay {
     private int mDrawnItemsLimit = Integer.MAX_VALUE;
     private MapView view;
     private Context context;
+    protected String mUid;
 
     public ItemizedIconOverlay(final Context pContext, final List<Marker> pList,
             final com.mapbox.mapboxsdk.overlay.ItemizedIconOverlay.OnItemGestureListener<Marker> pOnItemGestureListener) {
@@ -146,6 +147,14 @@ public class ItemizedIconOverlay extends ItemizedOverlay {
             }
         }
         populate();
+    }
+
+    public String getUid() {
+        return mUid;
+    }
+
+    public void setUid(String aUid) {
+        mUid = aUid;
     }
 
     /**
